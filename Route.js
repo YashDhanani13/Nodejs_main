@@ -49,13 +49,13 @@
 //   res.send(req.params);
 // });
 // -------------------
-//particluar te print karvavu hoy to :- 
+//particluar te print karvavu hoy to :-
 
 // app.get("/user/:userid/book/:bookid", (req, res) => {
 //   res.send(req.params.userid);
 // });
 
-//user id with messsaghe show :- 
+//user id with messsaghe show :-
 
 // app.get("/user/:userid/book/:bookid", (req, res) => {
 //   res.send("Book Id :" + req.params.bookid);

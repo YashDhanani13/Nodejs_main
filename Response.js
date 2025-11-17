@@ -1,7 +1,7 @@
 // Simple Express Examples
 
-const express = require("express");
-const app = express();
+// const express = require("express");
+// const app = express();
 
 // ---------------------------------------------
 // 1. res.send()
@@ -74,7 +74,7 @@ const app = express();
 
 // ---------------------------------------------
 
-// 6. res.download
+// 6. res.download  [ this is used o direact the download the file ]  
 
 // app.get(" / download", (req, res) => {
 //   res.download("file/shortcut.pdf", "Download");  ?// here give the path odf file
@@ -82,7 +82,7 @@ const app = express();
 
 // -----------------------------------------------------------------
 
-//7. res.sendFile :-   // give the path releative
+//7. res.sendFile :-   [ it used to download buit uit  not force to  download automatic like download ]
 
 // app.get('/download' , (req, res) =>{
 //     res.sendFile(__filename + "files/shortcuts.pdf")
@@ -93,7 +93,7 @@ const app = express();
 
 // -------------------------------------------------------------------------------------------
 
-// 8. res.end :-
+// 8. res.end   :    [ this is used to end (cut) ] :-   
 
 // app.get('/end' , (req , res) =>{
 //     res.write("yhisd is  testing ")  //  write any write trhe word in thsie write
@@ -119,27 +119,24 @@ const app = express();
 //   res.status(200).send("Hello");
 // });
 
-app.get("/check", (req, res) => {
-  console.log(res.headersSent);   //here the not found the response  so it false in this  time 
-  res.send("hello");   // here giver response 
-  console.log(res.headersSent); // here the reponse are true because it found the resspone
-});
-// ---------------------------------------------------------------------------------------------
-app.get('/check' , (req,res) =>{
-  res.set("custom -header" , " hello 22222223")
-  console.log(res.get('custom -header'));
-  res.send("header - set")
-  
-})
-
-
+// app.get("/check", (req, res) => {
+//   console.log(res.headersSent); //here the not found the response  so it false in this  time
+//   res.send("hello"); // here giver response
+//   console.log(res.headersSent); // here the reponse are true because it found the resspone
+// });
+// // ---------------------------------------------------------------------------------------------
+// app.get("/check", (req, res) => {
+//   res.set("custom -header", " hello 22222223");
+//   console.log(res.get("custom -header"));
+//   res.send("header - set");
+// });
 
 // ----------------------------------------------------
 // Start server
 
-app.listen(4000, () => {
-  console.log("App listening on port 4000!");
-});
+// app.listen(4000, () => {
+//   console.log("App listening on port 4000!");
+// });
 
 // 301  : this 301 is redireact wirg parminatily
 // 302  : it temporaray redirect with url
