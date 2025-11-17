@@ -115,9 +115,24 @@ const app = express();
 //     res.sendStatus(404)   //  this is is errior whne any error insi file
 // })
 
-app.get("/error", (req, res) => {
-  res.status(200).send("Hello");
+// app.get("/error", (req, res) => {
+//   res.status(200).send("Hello");
+// });
+
+app.get("/check", (req, res) => {
+  console.log(res.headersSent);   //here the not found the response  so it false in this  time 
+  res.send("hello");   // here giver response 
+  console.log(res.headersSent); // here the reponse are true because it found the resspone
 });
+// ---------------------------------------------------------------------------------------------
+app.get('/check' , (req,res) =>{
+  res.set("custom -header" , " hello 22222223")
+  console.log(res.get('custom -header'));
+  res.send("header - set")
+  
+})
+
+
 
 // ----------------------------------------------------
 // Start server
@@ -126,9 +141,5 @@ app.listen(4000, () => {
   console.log("App listening on port 4000!");
 });
 
-
-
-
-
-// 301  : this 301 is redireact wirg parminatily 
-// 302  : it temporaray redirect with url 
+// 301  : this 301 is redireact wirg parminatily
+// 302  : it temporaray redirect with url
