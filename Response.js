@@ -41,6 +41,7 @@
 // ---------------------------------------------
 // 3. res.jsonp() – used for cross-domain requests
 
+
 // app.get("/", (req, res) => {
 //   const users = [
 //     { id: 1, name: "Rohit Sharma" },

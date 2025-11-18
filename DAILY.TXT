@@ -13,8 +13,6 @@
 -  video :-  18, 19 ,20 
 
 
-
-
 - yaho baba :- 
 
 
@@ -23,7 +21,15 @@
 15 :- saturday  
 16 :- sunday 
 -----------------------------------------------------------------------------------------------
-17- 11- 2025 
+17- 11- 2025  (monday )
 
-all model of response
-
+- Response Methods Tutorial
+------------------------------------------------------------------------------------------------
+18-11-2025 ( tuesday )    (3 hours ) 
+ 
+- reuest properity  & methods (30 min)
+- Ejs ntemplate tutorial (part : 1) (33 min)
+- Ejs ntemplate tutorial (part : 2) (30 min)
+- crud opearttion witrg mondodb (part : 1)(24 min)
+- crud opearttion witrg mondodb (part : 2) (40 min)
+- crud opearttion witrg mondodb (part : 3) (30 min)
