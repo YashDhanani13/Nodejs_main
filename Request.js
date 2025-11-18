@@ -137,7 +137,7 @@ app.get("/", (req, res) => {
 //       res.send("Valid JSON Data")  
 //      }else if(req.is('text/html')){
 //         res.send("Html dtaa")
-//      }else{
+//      }else{m   
 //         res.status(400).send("Unsupported Content-Type")
 //      }
 // });
@@ -148,3 +148,18 @@ app.get("/", (req, res) => {
 //form data  [passs]
 
 // request form data send  kari shkai
+// jtyjjgjghjj
+// j
+
+// jgh
+// jgh
+// jcons Headers
+// j
+// ghj
+
+// j
+// j
+const  name = "hell";
+
+console.log(name);
+
