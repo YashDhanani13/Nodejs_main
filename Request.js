@@ -122,7 +122,6 @@ app.get("/", (req, res) => {
 //3 . req,get  : same work as headder work
 
 
-
 // app.get("/about", (req, res) => {
 //   res.send(req.get("Connection"));
 //   // res.send(req.get("host"))
